@@ -121,6 +121,7 @@ nav>.right-nav>ul>li>a:hover{
 .main-container{
     max-width: 1440px;
     margin: 50px auto;
+    padding: 0 15px;
 }
 .habits-section{
     text-align: center;
@@ -143,7 +144,44 @@ nav>.right-nav>ul>li>a:hover{
 }
 .gray-text{
         color: rgba(255, 255, 255, 0.5);
-    }
+}
+.joining-single-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222222;
+    border-radius: 18px;
+    padding: 40px 54px;
+    gap: 165px;
+}
+.left-joining-card{
+    max-width: 443px;
+}
+.left-joining-card h1{
+    font-size: 3rem;
+}
+.left-joining-card p{
+    margin-top: 14px;
+    margin-bottom: 34px;
+    line-height: 24px;
+}
+.left-joining-card button{
+    color: white;
+    padding: 16px 45px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 42px;
+    cursor: pointer;
+    background-color: #e6533c;
+    border: none;
+}
+.right-joining-card img{
+    max-width: 366px;
+    border-radius: 18px;
+}
+
+
+
 
 
 /* For Responsive  */
@@ -174,5 +212,33 @@ nav>.right-nav>ul>li>a:hover{
         display: flex;
         justify-content: center;
     }
-    
+    .habits-section h1 {
+        font-size: 2.25rem;
+    }
+    .habits-card {
+        grid-template-columns: repeat(1,1fr);
+        gap: 1px;
+    }
+    .habits-section p {
+        padding: 0 10px;
+    }
+    .joining-single-card {
+        justify-content: center;
+        padding: 20px 24px;
+        gap: 30px;
+        flex-direction: column;
+    }
+.joining-single-card h1{
+    font-size: 2.25rem;
+}
+.left-joining-card{
+    text-align: center;
+}
+.right-joining-card img {
+        max-width: 100%;
+    }
+
+
+
+
 }
