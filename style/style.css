@@ -1,0 +1,178 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.full-body{
+    background-color: #000000;
+    color: white;
+}
+header{
+    max-width: 1440px;
+    margin: 50px auto;
+}
+header>nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-bars{
+    display: none !important;
+}
+.left-nav>em{
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #e6533c;
+}
+nav>.right-nav>ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    list-style: none;
+}
+.right-nav{
+    border: 1px solid #323232;
+    padding: 12px 2px;
+    border-radius: 40px;
+}
+nav>.right-nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 46px;
+    padding: 8px 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+nav>.right-nav>ul>li>.active{
+    background-color:#e6533c;
+}
+nav>.right-nav>ul>li>a:hover{
+    background-color:#e6533c;
+    transition: 0.4s;
+}
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.hero-section>.hero-left{
+    max-width: 600px;
+}
+.hero-section>.hero-left>h1{
+    font-size: 4.75rem;
+}
+.hero-section>.hero-left>p{
+    margin: 28px 0px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.hero-btn{
+    display: flex;
+    gap: 14px;
+}
+.hero-btn button{
+    color: white;
+    padding: 16px 45px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border: 1px solid white;
+    border-radius: 42px;
+    background-color: rgba(240, 248, 255, 0);
+    cursor: pointer;
+}
+.hero-btn .btn-active{
+    border: none;
+    background-color: #e6533c;
+}
+.hero-right{
+    position: relative;
+}
+.tooltip{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #303030cf;
+    border-radius: 12px;
+    padding: 20px 23px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.tooltip>p{
+    background-color: #e6533c;
+    padding: 20px;
+    border-radius: 50%;
+}
+.tooltip2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #303030cf;
+    border-radius: 12px;
+    padding: 20px 23px;
+    margin-top: 170px;
+}
+.main-container{
+    max-width: 1440px;
+    margin: 50px auto;
+}
+.habits-section{
+    text-align: center;
+}
+.habits-section h1{
+    font-size: 3rem;
+}
+.habits-section p{
+    margin-top: 14px;
+    margin-bottom: 58px;
+}
+.habits-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+.habits-card-main img{
+    border-radius: 50%;
+    border: 3px solid #1a1a1a;
+}
+.gray-text{
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+
+/* For Responsive  */
+@media screen and (max-width: 430px){
+    .right-nav{
+        display: none;
+    }
+    .fa-bars{
+        display: block !important;
+    }
+    header {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-section > .hero-left > h1 {
+        font-size: 2.25rem;
+    }
+    .hero-btn button {
+        font-size: 1rem;
+        padding: 16px 20px;
+        align-items: center;
+    }
+    .hero-btn-section{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
